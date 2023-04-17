@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>ModalWeb</title>
+</head>
+
+<body>
+    <div class="overlay-menu">
+        <i class="fa-solid fa-xmark menu-mark"></i>
+        <div class="menu">
+
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Service</a>
+            <a href="#">Blog</a>
+            <a href="#0557655432">Tel : 055 765 54 32</a>
+        </div>
+    </div>
+    <div class="container">
+        <header class="header">
+            <i class="fa-solid fa-bars"></i>
+            
+            <div class="project">
+                <h3>Project 1</h3>
+                <h3>Project 2</h3>
+                <h3>Project 3</h3>
+                <h3>Project 4</h3>
+                <h3>Projcet 5</h3>
+                <h3>Project 6</h3>
+                <h3>Project 7</h3>
+            </div>
+           
+            <div class="new-btn">
+                <button id="btn">New</button>
+            </div>
+        </header>
+        <div class="modal-table">
+            <div class="modal-all">
+                <i class="fa-regular fa-circle-xmark"></i>
+                <div class="modal-left-card">
+                <div class="modalLeft">
+                    <h5>Block</h5>
+                    <input type="number">
+                </div>
+                <div class="modalRight">
+                    <h5>Floor</h5>
+                    <input type="number">
+                </div>
+                <div class="modalTop">
+                    <h5>Apartment</h5>
+                    <input type="number">
+                </div>
+                <div class="modalBottom">
+                    <h5>Price</h5>
+                    <input type="number">
+                </div>
+                
+                <select name="choose" id="select" >
+                    <option value="For Rent" id="Rent">For rent</option>
+                    <option value="Occuped" id="Occup">Occuped</option>
+                    <option value="Vip" id="Vip">Vip</option>
+                </select>
+             
+            </div>
+            
+            <div class="modal-right-card">
+                <button type="submit" class="btnSend">Submit</button>
+            </div>
+            </div>
+            
+        </div>
+
+        <section class="section">
+            <div class="total-side">
+                <div class="total">
+                    <h3>Total</h3>
+                    <hr>
+                   
+                </div>
+                <div class="for">
+                    <h3>For rent</h3>
+                    <hr>
+                    
+                </div>
+                <div class="occuped">
+                    <h3>Occuped</h3>
+                    <hr>
+                  
+                </div>
+                <div class="vip">
+                    <h3>Vip</h3>
+                    <hr>
+                   
+                </div>
+                <div class="circle">
+
+                    <div class="top-circle">
+                        <div class="color-unknow1 enter">
+                            <span class="text1"></span>
+                            <p></p>
+                        </div>
+                        <div class="color-unknow2  enter">
+                            <span class="text2"></span>
+                            <p></p>
+                        </div>
+                        <div class="color-unknow3 enter">
+                            <span class="text3"></span>
+                            <p></p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+    </section>
+    </div>
+
+    <script src="./modal.js"></script>
+
+</body>
+
+</html>
