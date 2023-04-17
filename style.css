@@ -274,7 +274,7 @@ option{
         height: 200px;
         border-radius: 50%;
     }
-    .total , .for , .ocupped , .vip , .circle{
+    .total , .for , .occuped , .vip , .circle{
         height: 250px;
     }
     .modal-top h4{
@@ -319,7 +319,7 @@ padding: 5px 10px;
         height: 170px;
         border-radius: 50%;
     }
-    .total , .for , .ocupped , .vip , .circle{
+    .total , .for , .occuped , .vip , .circle{
         height: 210px;
     }
     .modal-top h4{
@@ -382,7 +382,7 @@ padding: 5px 10px;
     input{
         width: 100%;
     }
-    .total , .for , .ocupped , .vip , .circle{
+    .total , .for , .occuped , .vip , .circle{
         height: 200px;
         width: 100%;
     }
@@ -429,7 +429,7 @@ padding: 5px 10px;
         height: 150px;
         border-radius: 50%;
     }
-    .total , .for , .ocupped , .vip , .circle{
+    .total , .for , .occuped , .vip , .circle{
         height: 200px;
     }
     
@@ -470,7 +470,7 @@ padding: 5px 10px;
     input{
         width: 100%;
     }
-    .total , .for , .ocupped , .vip , .circle{
+    .total , .for , .occuped , .vip , .circle{
         height: 150px;
     }
     

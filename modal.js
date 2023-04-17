@@ -13,9 +13,10 @@ xmark.addEventListener('click', function () {
     modalTable.classList.remove('active');
 });
 
-var projectID = 0;
+let projectID = 0;
 let projects = [
     {
+        
         "rent": [],
         "occup": [],
         "vip": [],
@@ -26,6 +27,19 @@ let projects = [
         "vip": [],
     },
     {
+        
+        "rent": [],
+        "occup": [],
+        "vip": [],
+    },
+    {
+       
+        "rent": [],
+        "occup": [],
+        "vip": [],
+    },
+    {
+        
         "rent": [],
         "occup": [],
         "vip": [],
@@ -36,21 +50,12 @@ let projects = [
         "vip": [],
     },
     {
+       
         "rent": [],
         "occup": [],
         "vip": [],
     },
-    {
-        "rent": [],
-        "occup": [],
-        "vip": [],
-    },
-    {
-        "rent": [],
-        "occup": [],
-        "vip": [],
-    },
-] 
+]
 
 
 const hElement = document.querySelectorAll("h3")[0];
@@ -77,6 +82,7 @@ const p3 = document.querySelectorAll("p")[2];
 hElement.addEventListener('click', function (e) {
     section.classList.add('sec-active');
     projectID = 0;
+    console.log(projectID)
     color_unknow1.style.width = '45%'
     color_unknow1.style.height = '40%'
     color_unknow1.style.backgroundColor = '#F8EFBA'
@@ -104,40 +110,40 @@ hElement.addEventListener('click', function (e) {
     //         occup.remove()
     //         var vipp = document.querySelector(".vip_"+i); 
     //         vipp.remove()
-            
+
     //     }
     // }
-    
 
-   
-    for(let i = 0 ; i < projects[projectID]['rent'].length ; i++){
+
+
+    for (let i = 0; i < projects[projectID]['rent'].length; i++) {
         let span1 = document.createElement("span");
         span1.className = "rent_" + i
-        
+
         span1.innerHTML = projects[projectID]['rent'][i]
         for2.appendChild(span1)
-        
+
     }
-    for(let i = 0 ; i < projects[projectID]['occup'].length ; i++){
+    for (let i = 0; i < projects[projectID]['occup'].length; i++) {
         let span1 = document.createElement("span");
         span1.className = "occup_" + i
-        
+
         span1.innerHTML = projects[projectID]['occup'][i]
-      occuPed2.appendChild(span1)
+        occuPed2.appendChild(span1)
     }
-    for(let i = 0 ; i < projects[projectID]['vip'].length ; i++){
+    for (let i = 0; i < projects[projectID]['vip'].length; i++) {
         let span1 = document.createElement("span");
         span1.className = "vip_" + i
-        
+
         span1.innerHTML = projects[projectID]['vip'][i]
-      vipV.appendChild(span1)
+        vipV.appendChild(span1)
     }
-    for(let i = 0 ; i < projects[projectID]['rent'].length ; i++){
+    for (let i = 0; i < projects[projectID]['rent'].length; i++) {
         let span1 = document.createElement("span");
         span1.className = "total_" + i
-        
+
         span1.innerHTML = parseInt(projects[projectID]['rent'][i]) + parseInt(projects[projectID]['occup'][i]) + parseInt(projects[projectID]['vip'][i]);
-       total.appendChild(span1)
+        total.appendChild(span1)
     }
     e.preventDefault();
 });
@@ -161,35 +167,35 @@ hElement1.addEventListener('click', function (e) {
     color_unknow3.style.right = '0'
     color_unknow3.style.top = '0'
     color_unknow3.style.backgroundColor = '#A3CB38'
-    for(let i = 0 ; i < projects[projectID]['rent'].length ; i++){
+    for (let i = 0; i < projects[projectID]['rent'].length; i++) {
         let span1 = document.createElement("span");
         span1.className = "rent_" + i
-        
+
         span1.innerHTML = projects[projectID]['rent'][i]
-       for2.appendChild(span1)
+        for2.appendChild(span1)
     }
-    for(let i = 0 ; i < projects[projectID]['occup'].length ; i++){
+    for (let i = 0; i < projects[projectID]['occup'].length; i++) {
         let span1 = document.createElement("span");
         span1.className = "occup_" + i
-        
+
         span1.innerHTML = projects[projectID]['occup'][i]
-      occuPed2.appendChild(span1)
+        occuPed2.appendChild(span1)
     }
-    for(let i = 0 ; i < projects[projectID]['vip'].length ; i++){
+    for (let i = 0; i < projects[projectID]['vip'].length; i++) {
         let span1 = document.createElement("span");
         span1.className = "vip_" + i
-        
+
         span1.innerHTML = projects[projectID]['vip'][i]
         vipV.appendChild(span1)
     }
-    for(let i = 0 ; i < projects[projectID]['rent'].length ; i++){
+    for (let i = 0; i < projects[projectID]['rent'].length; i++) {
         let span1 = document.createElement("span");
         span1.className = "total_" + i
-        
+
         span1.innerHTML = parseInt(projects[projectID]['rent'][i]) + parseInt(projects[projectID]['occup'][i]) + parseInt(projects[projectID]['vip'][i]);
-       total.appendChild(span1)
+        total.appendChild(span1)
     }
-    
+
     e.preventDefault();
 });
 hElement2.addEventListener('click', function (e) {
@@ -211,35 +217,35 @@ hElement2.addEventListener('click', function (e) {
     color_unknow3.style.top = '50%'
     color_unknow3.style.right = '0'
     color_unknow3.style.backgroundColor = '#D6A2E8'
-    for(let i = 0 ; i < projects[projectID]['rent'].length ; i++){
+    for (let i = 0; i < projects[projectID]['rent'].length; i++) {
         let span1 = document.createElement("span");
         span1.className = "rent_" + i
-        
+
         span1.innerHTML = projects[projectID]['rent'][i]
         for2.appendChild(span1)
     }
-    for(let i = 0 ; i < projects[projectID]['occup'].length ; i++){
+    for (let i = 0; i < projects[projectID]['occup'].length; i++) {
         let span1 = document.createElement("span");
         span1.className = "occup_" + i
-        
+
         span1.innerHTML = projects[projectID]['occup'][i]
-       occuPed2.appendChild(span1)
+        occuPed2.appendChild(span1)
     }
-    for(let i = 0 ; i < projects[projectID]['vip'].length ; i++){
+    for (let i = 0; i < projects[projectID]['vip'].length; i++) {
         let span1 = document.createElement("span");
         span1.className = "vip_" + i
-        
+
         span1.innerHTML = projects[projectID]['vip'][i]
         vipV.appendChild(span1)
     }
-    for(let i = 0 ; i < projects[projectID]['rent'].length ; i++){
+    for (let i = 0; i < projects[projectID]['rent'].length; i++) {
         let span1 = document.createElement("span");
         span1.className = "total_" + i
-        
+
         span1.innerHTML = parseInt(projects[projectID]['rent'][i]) + parseInt(projects[projectID]['occup'][i]) + parseInt(projects[projectID]['vip'][i]);
-      total.appendChild(span1)
+        total.appendChild(span1)
     }
-    
+
     e.preventDefault();
 });
 hElement3.addEventListener('click', function (e) {
@@ -261,35 +267,35 @@ hElement3.addEventListener('click', function (e) {
     color_unknow3.style.position = 'absolute'
     color_unknow3.style.top = '0'
     color_unknow3.style.right = '0'
-    for(let i = 0 ; i < projects[projectID]['rent'].length ; i++){
+    for (let i = 0; i < projects[projectID]['rent'].length; i++) {
         let span1 = document.createElement("span");
         span1.className = "rent_" + i
-        
+
         span1.innerHTML = projects[projectID]['rent'][i]
         for2.appendChild(span1)
     }
-    for(let i = 0 ; i < projects[projectID]['occup'].length ; i++){
+    for (let i = 0; i < projects[projectID]['occup'].length; i++) {
         let span1 = document.createElement("span");
         span1.className = "occup_" + i
-        
+
         span1.innerHTML = projects[projectID]['occup'][i]
-       occuPed2.appendChild(span1)
+        occuPed2.appendChild(span1)
     }
-    for(let i = 0 ; i < projects[projectID]['vip'].length ; i++){
+    for (let i = 0; i < projects[projectID]['vip'].length; i++) {
         let span1 = document.createElement("span");
         span1.className = "vip_" + i
-        
+
         span1.innerHTML = projects[projectID]['vip'][i]
-       vipV.appendChild(span1)
+        vipV.appendChild(span1)
     }
-    for(let i = 0 ; i < projects[projectID]['rent'].length ; i++){
+    for (let i = 0; i < projects[projectID]['rent'].length; i++) {
         let span1 = document.createElement("span");
         span1.className = "total_" + i
-        
+
         span1.innerHTML = parseInt(projects[projectID]['rent'][i]) + parseInt(projects[projectID]['occup'][i]) + parseInt(projects[projectID]['vip'][i]);
-       total.appendChild(span1)
+        total.appendChild(span1)
     }
-    
+
     e.preventDefault();
 
 });
@@ -311,35 +317,35 @@ hElement4.addEventListener('click', function (e) {
     color_unknow3.style.top = '45%'
     color_unknow3.style.right = '0'
     color_unknow3.style.textAlign = 'center'
-    for(let i = 0 ; i < projects[projectID]['rent'].length ; i++){
+    for (let i = 0; i < projects[projectID]['rent'].length; i++) {
         let span1 = document.createElement("span");
         span1.className = "rent_" + i
-        
+
         span1.innerHTML = projects[projectID]['rent'][i]
-       for2.appendChild(span1)
+        for2.appendChild(span1)
     }
-    for(let i = 0 ; i < projects[projectID]['occup'].length ; i++){
+    for (let i = 0; i < projects[projectID]['occup'].length; i++) {
         let span1 = document.createElement("span");
         span1.className = "occup_" + i
-        
+
         span1.innerHTML = projects[projectID]['occup'][i]
-      occuPed2.appendChild(span1)
+        occuPed2.appendChild(span1)
     }
-    for(let i = 0 ; i < projects[projectID]['vip'].length ; i++){
+    for (let i = 0; i < projects[projectID]['vip'].length; i++) {
         let span1 = document.createElement("span");
         span1.className = "vip_" + i
-        
+
         span1.innerHTML = projects[projectID]['vip'][i]
-      vipV.appendChild(span1)
+        vipV.appendChild(span1)
     }
-    for(let i = 0 ; i < projects[projectID]['rent'].length ; i++){
+    for (let i = 0; i < projects[projectID]['rent'].length; i++) {
         let span1 = document.createElement("span");
         span1.className = "total_" + i
-        
+
         span1.innerHTML = parseInt(projects[projectID]['rent'][i]) + parseInt(projects[projectID]['occup'][i]) + parseInt(projects[projectID]['vip'][i]);
-       total.appendChild(span1)
+        total.appendChild(span1)
     }
-    
+
     e.preventDefault();
 });
 hElement5.addEventListener('click', function (e) {
@@ -362,42 +368,42 @@ hElement5.addEventListener('click', function (e) {
     color_unknow3.style.position = 'absolute'
     color_unknow3.style.top = '0'
     color_unknow3.style.right = '0'
-    for(let i = 0 ; i < projects[projectID]['rent'].length ; i++){
+    for (let i = 0; i < projects[projectID]['rent'].length; i++) {
         let span1 = document.createElement("span");
         span1.className = "rent_" + i
-        
+
         span1.innerHTML = projects[projectID]['rent'][i]
-       for2.appendChild(span1)
+        for2.appendChild(span1)
     }
-    for(let i = 0 ; i < projects[projectID]['occup'].length ; i++){
+    for (let i = 0; i < projects[projectID]['occup'].length; i++) {
         let span1 = document.createElement("span");
         span1.className = "occup_" + i
-        
+
         span1.innerHTML = projects[projectID]['occup'][i]
-       occuPed2.appendChild(span1)
+        occuPed2.appendChild(span1)
     }
-    for(let i = 0 ; i < projects[projectID]['vip'].length ; i++){
+    for (let i = 0; i < projects[projectID]['vip'].length; i++) {
         let span1 = document.createElement("span");
         span1.className = "vip_" + i
-        
+
         span1.innerHTML = projects[projectID]['vip'][i]
-       vipV.appendChild(span1)
+        vipV.appendChild(span1)
     }
-    for(let i = 0 ; i < projects[projectID]['rent'].length ; i++){
+    for (let i = 0; i < projects[projectID]['rent'].length; i++) {
         let span1 = document.createElement("span");
         span1.className = "total_" + i
-        
+
         span1.innerHTML = parseInt(projects[projectID]['rent'][i]) + parseInt(projects[projectID]['occup'][i]) + parseInt(projects[projectID]['vip'][i]);
-       total.appendChild(span1)
+        total.appendChild(span1)
     }
-    
+
     e.preventDefault();
 });
 hElement6.addEventListener('click', function (e) {
     section.classList.add('sec-active');
-    
+
     projectID = 6
-   color_unknow1.style.width = '40%'
+    color_unknow1.style.width = '40%'
     color_unknow1.style.height = '50%'
     color_unknow1.style.backgroundColor = '#273c75'
     p1.innerHTML = '35%'
@@ -413,39 +419,39 @@ hElement6.addEventListener('click', function (e) {
     color_unknow3.style.position = 'absolute'
     color_unknow3.style.top = '0'
     color_unknow3.style.right = '0'
-    for(let i = 0 ; i < projects[projectID]['rent'].length ; i++){
+    for (let i = 0; i < projects[projectID]['rent'].length; i++) {
         let span1 = document.createElement("span");
         span1.className = "rent_" + i
-        
+
         span1.innerHTML = projects[projectID]['rent'][i]
-       for2.appendChild(span1)
+        for2.appendChild(span1)
     }
-    for(let i = 0 ; i < projects[projectID]['occup'].length ; i++){
+    for (let i = 0; i < projects[projectID]['occup'].length; i++) {
         let span1 = document.createElement("span");
         span1.className = "occup_" + i
-        
+
         span1.innerHTML = projects[projectID]['occup'][i]
-       occuPed2.appendChild(span1)
+        occuPed2.appendChild(span1)
     }
-    for(let i = 0 ; i < projects[projectID]['vip'].length ; i++){
+    for (let i = 0; i < projects[projectID]['vip'].length; i++) {
         let span1 = document.createElement("span");
         span1.className = "vip_" + i
-        
+
         span1.innerHTML = projects[projectID]['vip'][i]
-       vipV.appendChild(span1)
+        vipV.appendChild(span1)
     }
-    for(let i = 0 ; i < projects[projectID]['rent'].length ; i++){
+    for (let i = 0; i < projects[projectID]['rent'].length; i++) {
         let span1 = document.createElement("span");
         span1.className = "total_" + i
-        
+
         span1.innerHTML = parseInt(projects[projectID]['rent'][i]) + parseInt(projects[projectID]['occup'][i]) + parseInt(projects[projectID]['vip'][i]);
-       total.appendChild(span1)
+        total.appendChild(span1)
     }
 
     e.preventDefault();
-    
+
 });
- 
+
 
 
 const overlayMenu = document.querySelector(".overlay-menu");
@@ -505,7 +511,6 @@ const forRent = document.querySelector('#rent');
 const occuped = document.querySelector('#occup');
 const vip = document.querySelector('#vip');
 const selected = document.querySelector('#select');
- 
 
 
 
@@ -513,25 +518,26 @@ const selected = document.querySelector('#select');
 
 
 
-btnSend.addEventListener('click' , addModal)
 
-function addModal(e){
-   
+btnSend.addEventListener('click', addModal)
+
+function addModal(e) {
+
     const price = input3.value
-    if(price === ""){
+    if (price === "") {
         return
     }
-     let selecValue = selected.value
-   if(selecValue === 'For Rent' ){
-    projects[projectID]['rent'].push(price);
-   }else if( selecValue === 'Occuped'){
-    projects[projectID]['occup'].push(price);
-   }else if( selecValue === 'Vip'){
-    projects[projectID]['vip'].push(price);
-   }
-   console.log(projects)
-   input3.value = "" 
- selecValue.value = 'For Rent'
-   
-e.preventDefault()
+    let selecValue = selected.value
+    if (selecValue === 'For Rent') {
+        projects[projectID]['rent'].push(price);
+    } else if (selecValue === 'Occuped') {
+        projects[projectID]['occup'].push(price);
+    } else if (selecValue === 'Vip') {
+        projects[projectID]['vip'].push(price);
+    }
+    console.log(projects)
+    input3.value = ""
+    selecValue.value = 'For Rent'
+
+    e.preventDefault()
 }
